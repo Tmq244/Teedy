@@ -132,27 +132,28 @@
                 </dependencies>-->
             </plugin>
 
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-pmd-plugin</artifactId>-->
-<!--                <version>3.22.0</version>-->
-<!--                <configuration>-->
-<!--                    <rulesets>-->
-<!--                        <ruleset>customize-rules.xml</ruleset>-->
-<!--                    </rulesets>-->
-<!--                    <linkXRef>true</linkXRef> &lt;!&ndash; Links PMD report to source code in site &ndash;&gt;-->
-<!--                </configuration>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>pmd-check</id>-->
-<!--                        <phase>verify</phase> &lt;!&ndash; Bind to verify phase &ndash;&gt;-->
-<!--                        <goals>-->
-<!--                            <goal>pmd</goal> &lt;!&ndash; Generate PMD report &ndash;&gt;-->
-<!--                            <goal>check</goal> &lt;!&ndash; Run PMD check &ndash;&gt;-->
-<!--                        </goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-pmd-plugin</artifactId>
+                <version>3.22.0</version>
+                <configuration>
+                    <rulesets>
+                        <ruleset>customize-rules.xml</ruleset>
+                    </rulesets>
+                    <linkXRef>true</linkXRef> <!-- Links PMD report to source code in site -->
+                    <failOnViolation>false</failOnViolation> <!-- 忽略违反规则的失败 -->
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>pmd-check</id>
+                        <phase>verify</phase> <!-- Bind to verify phase -->
+                        <goals>
+                            <goal>pmd</goal> <!-- Generate PMD report -->
+                            <goal>check</goal> <!-- Run PMD check -->
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
