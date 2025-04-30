@@ -140,4 +140,30 @@ public class TestFileUtil extends BaseTest {
             Assert.assertTrue(outputStream.toByteArray().length > 0);
         }
     }
+
+    @Test
+    public void testDelete() throws Exception {
+        //create temporary files in the storage directory
+        String fileId = "testfile";
+        Path storedFile = DirectoryUtil.getStorageDirectory().resolve(fileId);
+        Path webFile = DirectoryUtil.getStorageDirectory().resolve(fileId + "_web");
+        Path thumbnailFile = DirectoryUtil.getStorageDirectory().resolve(fileId + "_thumb");
+
+        Files.write(storedFile, "test content".getBytes());
+        Files.write(webFile, "web content".getBytes());
+        Files.write(thumbnailFile, "thumb content".getBytes());
+
+        //verify files exist before deletion
+        Assert.assertTrue("Stored file should exist", Files.exists(storedFile));
+        Assert.assertTrue("Web file should exist", Files.exists(webFile));
+        Assert.assertTrue("Thumbnail file should exist", Files.exists(thumbnailFile));
+
+        //call the method
+        FileUtil.delete(fileId);
+
+        //verify files are deleted
+        Assert.assertFalse("Stored file should be deleted", Files.exists(storedFile));
+        Assert.assertFalse("Web file should be deleted", Files.exists(webFile));
+        Assert.assertFalse("Thumbnail file should be deleted", Files.exists(thumbnailFile));
+    }
 }
