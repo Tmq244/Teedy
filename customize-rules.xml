@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<ruleset name="Custom Rules"
+         xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+    <description>Custom PMD ruleset for LoC, CC, WMC, CBO, and LCOM</description>
+
+    <!-- Lines of Code (LoC) -->
+    <rule ref="category/java/design.xml/NcssCount">
+        <properties>
+            <property name="methodReportLevel" value="60" />
+            <property name="classReportLevel" value="1500" />
+            <property name="ncssOptions" value="" />
+        </properties>
+    </rule>
+
+    <!-- Cyclomatic Complexity (CC) -->
+    <rule ref="category/java/design.xml/CyclomaticComplexity">
+        <properties>
+            <property name="classReportLevel" value="80" />
+            <property name="methodReportLevel" value="10" />
+            <property name="cycloOptions" value="" />
+        </properties>
+    </rule>
+
+    <!-- Weighted Methods per Class (WMC) -->
+
+
+    <!-- Coupling Between Objects (CBO) -->
+    <rule ref="category/java/design.xml/CouplingBetweenObjects">
+        <properties>
+            <property name="threshold" value="20" />
+        </properties>
+    </rule>
+
+    <!-- Lack of Cohesion in Methods (LCOM) -->
+    <rule ref="category/java/design.xml/DataClass" />  <!--识别主要作为数据容器、缺乏复杂功能的类-->
+    <rule ref="category/java/design.xml/SingularField" />  <!--识别仅被一个方法使用的字段-->
+    <rule ref="category/java/design.xml/ImmutableField" />  <!--检测初始化后未被修改的非 final 字段-->
+
+
+</ruleset>
