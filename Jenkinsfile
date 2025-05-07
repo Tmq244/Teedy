@@ -3,11 +3,9 @@
     environment {
 // define environment variable
 // Jenkins credentials configuration
-        DOCKER_HUB_CREDENTIALS = credentials('dockerhub_credentials') // Docker
-Hub credentials ID store in Jenkins
+        DOCKER_HUB_CREDENTIALS = credentials('dockerhub_credentials') // Docker Hub credentials ID store in Jenkins
 // Docker Hub Repository's name
-DOCKER_IMAGE = 'xx/teedy-app' // your Docker Hub user name and
-Repository's name
+DOCKER_IMAGE = 'tmq244/teedy' // your Docker Hub user name and Repository's name
         DOCKER_TAG = "${env.BUILD_NUMBER}" // use build number as tag
     }
     stages {
@@ -17,7 +15,7 @@ Repository's name
                     branches:
  [[name: '*/master']],
                     extensions: [],
-                    userRemoteConfigs: [[url: 'https://github.com/xx/Teedy.git']]
+                    userRemoteConfigs: [[url: 'https://github.com/tmq244/Teedy.git']]
 // your github Repository
                 )
                 sh
@@ -46,8 +44,8 @@ docker.image("${env.DOCKER_IMAGE}:${env.DOCKER_TAG}").push()
 docker.image("${env.DOCKER_IMAGE}:${env.DOCKER_TAG}").push('latest')
                     }
                 }
-                }
-                }
+            }
+        }
                 // Running Docker container
                         stage('Run containers') {
                             steps {
