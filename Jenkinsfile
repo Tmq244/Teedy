@@ -18,8 +18,7 @@ DOCKER_IMAGE = 'tmq244/teedy' // your Docker Hub user name and Repository's name
                     userRemoteConfigs: [[url: 'https://github.com/tmq244/Teedy.git']]
 // your github Repository
                 )
-                sh
-'mvn -B -DskipTests clean package'
+                sh 'mvn -B -DskipTests clean package'
             }
         }
 // Building Docker images
