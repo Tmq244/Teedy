@@ -11,6 +11,12 @@ pipeline {
                 bat 'mvn -B -DskipTests clean package'
             }
         }
+        stage('Verify Docker') {
+            steps {
+                bat 'wsl docker --version'
+                bat 'wsl docker info --format "{{.ServerVersion}}"'
+            }
+        }
         stage('Building image') {
             steps {
                 script {
