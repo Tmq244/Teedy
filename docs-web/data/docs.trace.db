@@ -1,3 +1,81 @@
 2025-03-05 16:18:41 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_CONFIG" not found; SQL statement:
 select c.CFG_VALUE_C from T_CONFIG c where c.CFG_ID_C='DB_VERSION' [42102-199]
+2025-05-10 21:59:32 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_STATUS_C='PENDING' order by rr1_0.REQ_CREATEDATE_D [42102-199]
+2025-05-10 21:59:57 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-10 22:00:26 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_STATUS_C='PENDING' order by rr1_0.REQ_CREATEDATE_D [42102-199]
+2025-05-10 22:01:46 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-10 22:42:53 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-11 00:57:52 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-11 01:07:22 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-11 01:18:00 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-11 10:28:37 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-11 10:29:52 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-11 16:03:08 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-11 16:17:14 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE CACHED TABLE T_REGISTRATION_REQUEST ( [*]"; expected "identifier"; SQL statement:
+create cached table T_REGISTRATION_REQUEST ( [42001-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "    REQ_ID_C[*] VARCHAR(36) NOT NULL, "; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REPLACE"; SQL statement:
+    REQ_ID_C varchar(36) not null, [42001-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "    REQ_USERNAME_C[*] VARCHAR(50) NOT NULL, "; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REPLACE"; SQL statement:
+    REQ_USERNAME_C varchar(50) not null, [42001-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "    REQ_EMAIL_C[*] VARCHAR(100) NOT NULL, "; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REPLACE"; SQL statement:
+    REQ_EMAIL_C varchar(100) not null, [42001-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "    REQ_PASSWORD_C[*] VARCHAR(100) NOT NULL, "; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REPLACE"; SQL statement:
+    REQ_PASSWORD_C varchar(100) not null, [42001-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "    REQ_STATUS_C[*] VARCHAR(20) NOT NULL, "; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REPLACE"; SQL statement:
+    REQ_STATUS_C varchar(20) not null, [42001-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "    REQ_CREATEDATE_D[*] DATETIME NOT NULL, "; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REPLACE"; SQL statement:
+    REQ_CREATEDATE_D datetime not null, [42001-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "    REQ_RESPONSEDATE_D[*] DATETIME, "; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REPLACE"; SQL statement:
+    REQ_RESPONSEDATE_D datetime, [42001-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "    REQ_RESPONSEMSG_C[*] VARCHAR(500), "; expected "ROLLBACK, REVOKE, RUNSCRIPT, RELEASE, REPLACE"; SQL statement:
+    REQ_RESPONSEMSG_C varchar(500), [42001-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "    PRIMARY[*] KEY (REQ_ID_C) "; SQL statement:
+    primary key (REQ_ID_C) [42000-199]
+2025-05-13 17:29:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement ")[*];"; SQL statement:
+); [42000-199]
+2025-05-13 17:30:02 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-13 19:45:44 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]
+2025-05-13 22:01:55 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "T_REGISTRATION_REQUEST" not found; SQL statement:
+select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWORD_C,rr1_0.REQ_RESPONSEDATE_D,rr1_0.REQ_RESPONSEMSG_C,rr1_0.REQ_STATUS_C,rr1_0.REQ_USERNAME_C from T_REGISTRATION_REQUEST rr1_0 where rr1_0.REQ_USERNAME_C=? and rr1_0.REQ_STATUS_C='PENDING' [42102-199]

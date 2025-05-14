@@ -1,0 +1,38 @@
+<div class="panel panel-default" ng-if="!loading">
+    <div class="panel-heading">
+        <h3 class="panel-title">Registration Requests</h3>
+    </div>
+    <div class="panel-body">
+        <table class="table table-striped" ng-if="requests.length">
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Request Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="request in requests">
+                    <td>{{request.username}}</td>
+                    <td>{{request.email}}</td>
+                    <td>{{request.create_date | date:'medium'}}</td>
+                    <td>
+                        <button class="btn btn-success btn-sm" ng-click="approve(request)">Approve</button>
+                        <button class="btn btn-danger btn-sm" ng-click="reject(request)">Reject</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div ng-if="!requests.length">
+            No pending registration requests.
+        </div>
+    </div>
+</div>
+<div ng-if="loading" class="text-center">
+    <i class="fa fa-spinner fa-spin"></i> Loading...
+</div> 
+
+<!-- AI-Generation: by Cursor
+prompt：New user request: a guest could send a request to admin to register as a new user. The
+admin could accept or reject the request. Once accepted, the guest could use the new account to login -->

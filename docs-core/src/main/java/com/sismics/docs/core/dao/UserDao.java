@@ -233,6 +233,36 @@ public class UserDao {
             return null;
         }
     }
+
+    // AI-Generation: by Cursor
+// prompt：New user request: a guest could send a request to admin to register as a new user. The
+// admin could accept or reject the request. Once accepted, the guest could use the new account to login 
+    
+    /**
+     * Find active users by role ID.
+     * 
+     * @param roleId Role ID
+     * @return List of users
+     */
+    @SuppressWarnings("unchecked")
+    public List<User> findByRoleId(String roleId) {
+        EntityManager em = ThreadLocalContext.get().getEntityManager();
+        Query q = em.createQuery("select u from User u where u.roleId = :roleId and u.deleteDate is null");
+        q.setParameter("roleId", roleId);
+        return q.getResultList();
+    }
+    
+    /**
+     * Find users with disable date (registration requests).
+     * 
+     * @return List of disabled users
+     */
+    @SuppressWarnings("unchecked")
+    public List<User> findByDisableDate() {
+        EntityManager em = ThreadLocalContext.get().getEntityManager();
+        Query q = em.createQuery("select u from User u where u.disableDate is not null and u.deleteDate is null");
+        return q.getResultList();
+    }
     
     /**
      * Deletes a user.

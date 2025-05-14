@@ -1,0 +1,15 @@
+<div class="row" ng-show="isAdmin">
+  <div class="col-md-12">
+    <ul class="nav nav-pills">
+      <li ui-sref-active="active"><a href="#/settings/user">{{ 'settings.menu.user' | translate }}</a></li>
+      <li ui-sref-active="active"><a href="#/settings/group">{{ 'settings.menu.group' | translate }}</a></li>
+      <li ui-sref-active="active"><a href="#/settings/vocabulary">{{ 'settings.menu.vocabulary' | translate }}</a></li>
+      <li ui-sref-active="active"><a href="#/settings/ldap">{{ 'settings.menu.ldap' | translate }}</a></li>
+      <li ui-sref-active="active"><a href="#/settings/registration">{{ 'settings.menu.registration' | translate }}</a></li>
+    </ul>
+  </div>
+</div> 
+
+<!-- AI-Generation: by Cursor
+prompt：New user request: a guest could send a request to admin to register as a new user. The
+admin could accept or reject the request. Once accepted, the guest could use the new account to login -->

@@ -79,6 +79,10 @@
           <button type="submit" class="btn btn-default btn-block" ng-if="app.guest_login" ng-click="loginAsGuest()">
             <span class="fas fa-user"></span> {{ 'login.login_as_guest' | translate }}
           </button>
+          
+          <p class="text-center" style="margin-top: 20px;">
+            <a href="#/register">{{ 'login.register' | translate }}</a>
+          </p>
         </form>
       </div>
     </div>
@@ -86,3 +90,7 @@
 
   <div class="login-img-container col-sm-6 hidden-xs"></div>
 </div>
+
+<!-- AI-Generation: by Cursor
+prompt：New user request: a guest could send a request to admin to register as a new user. The
+admin could accept or reject the request. Once accepted, the guest could use the new account to login -->

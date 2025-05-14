@@ -364,6 +364,27 @@ angular.module('docs',
         }
       }
     })
+    // AI-Generation: by Cursor
+    // prompt：New user request: a guest could send a request to admin to register as a new user. The
+    // admin could accept or reject the request. Once accepted, the guest could use the new account to login 
+    .state('register', {
+      url: '/register',
+      views: {
+        'page': {
+          templateUrl: 'partial/docs/register.html',
+          controller: 'Register'
+        }
+      }
+    })
+    .state('settings.registration', {
+      url: '/registration',
+      views: {
+        'settings': {
+          templateUrl: 'partial/docs/settings.registration.html',
+          controller: 'SettingsRegistration'
+        }
+      }
+    })
     .state('user', {
       url: '/user',
       abstract: true,
@@ -415,6 +436,24 @@ angular.module('docs',
         'sub': {
           templateUrl: 'partial/docs/group.profile.html',
           controller: 'GroupProfile'
+        }
+      }
+    })
+    .state('registrationRequest', {
+      url: '/registration/request',
+      views: {
+        'page': {
+          templateUrl: 'templates/registration/registration_request.html',
+          controller: 'RegistrationRequestCtrl'
+        }
+      }
+    })
+    .state('adminRegistrationRequests', {
+      url: '/admin/registration-requests',
+      views: {
+        'page': {
+          templateUrl: 'templates/admin/registration_requests.html',
+          controller: 'AdminRegistrationRequestsCtrl'
         }
       }
     });

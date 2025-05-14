@@ -1,0 +1,46 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="page-header">
+      <h1>{{ 'admin.registration.requests.title' | translate }}</h1>
+    </div>
+
+    <div ng-show="!requests || requests.length === 0" class="alert alert-info">
+      <span class="fas fa-info-circle"></span>
+      {{ 'admin.registration.requests.none' | translate }}
+    </div>
+
+    <div class="table-responsive" ng-show="requests.length > 0">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>{{ 'admin.registration.requests.username' | translate }}</th>
+            <th>{{ 'admin.registration.requests.email' | translate }}</th>
+            <th>{{ 'admin.registration.requests.date' | translate }}</th>
+            <th style="width: 15%">{{ 'admin.registration.requests.actions' | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="request in requests">
+            <td>{{ request.username }}</td>
+            <td>{{ request.email }}</td>
+            <td>{{ request.create_date | date:'medium' }}</td>
+            <td>
+              <div class="btn-group">
+                <button type="button" class="btn btn-success" ng-click="processRequest(request, 'approve')">
+                  <span class="fas fa-check"></span> {{ 'admin.registration.requests.approve' | translate }}
+                </button>
+                <button type="button" class="btn btn-danger" ng-click="processRequest(request, 'reject')">
+                  <span class="fas fa-times"></span> {{ 'admin.registration.requests.reject' | translate }}
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> 
+
+<!-- AI-Generation: by Cursor
+prompt：New user request: a guest could send a request to admin to register as a new user. The
+admin could accept or reject the request. Once accepted, the guest could use the new account to login  -->

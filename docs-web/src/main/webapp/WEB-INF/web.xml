@@ -104,5 +104,8 @@
     <url-pattern>/api/*</url-pattern>
   </servlet-mapping>
   
+  <!-- Registration request pages -->
+  <!-- Removed freemarker servlet-mapping blocks -->
+
   <absolute-ordering/>
 </web-app>
