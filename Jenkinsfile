@@ -28,7 +28,7 @@ pipeline {
         }
         stage('Verify') {
             steps {
-                sh
+                sh 'echo "Verify stage completed successfully"'
             }
         }
     }
