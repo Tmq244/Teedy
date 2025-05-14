@@ -28,7 +28,8 @@ pipeline {
         }
         stage('Verify') {
             steps {
-                sh 'echo "Verify stage completed successfully"'
+                sh 'kubectl rollout status deployment/${DEPLOYMENT_NAME}'
+                sh 'kubectl get pods'
             }
         }
     }
