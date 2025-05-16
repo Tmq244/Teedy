@@ -5881,3 +5881,105 @@ select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWOR
 14 May 2025 09:10:14,163 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
 14 May 2025 09:10:35,450 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
 14 May 2025 09:10:35,451 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+16 May 2025 17:36:50,360 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+16 May 2025 17:36:54,346 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+16 May 2025 17:36:54,361 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 32, new version is 32, executing database incremental update scripts 
+16 May 2025 17:36:54,362 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+16 May 2025 17:36:54,364 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+16 May 2025 17:37:02,377 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+16 May 2025 17:37:02,644 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+16 May 2025 17:37:03,427 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+16 May 2025 17:37:03,449 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+16 May 2025 17:37:03,454 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+16 May 2025 17:37:04,289 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+16 May 2025 17:37:04,295 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+16 May 2025 17:45:27,547 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+16 May 2025 17:48:36,777 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=2e03bd80-0a56-42a2-8813-39b22f495b1b} 
+16 May 2025 17:48:36,961 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 786f7281-4474-41d0-ac8d-e52039309ad3 
+16 May 2025 17:48:36,978 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=786f7281-4474-41d0-ac8d-e52039309ad3, language=eng} 
+16 May 2025 17:48:36,978 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=2e03bd80-0a56-42a2-8813-39b22f495b1b} 
+16 May 2025 17:48:37,466 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+16 May 2025 17:48:42,226 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=786f7281-4474-41d0-ac8d-e52039309ad3, name=translation_Chinese.docx} 
+16 May 2025 17:48:42,273 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 47ms: 786f7281-4474-41d0-ac8d-e52039309ad3 
+16 May 2025 17:48:42,321 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 786f7281-4474-41d0-ac8d-e52039309ad3 
+16 May 2025 17:53:26,268 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 067d0c3a-832e-42cf-bb58-439f0b07044a 
+16 May 2025 17:53:26,281 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=067d0c3a-832e-42cf-bb58-439f0b07044a, language=eng} 
+16 May 2025 17:53:26,901 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=067d0c3a-832e-42cf-bb58-439f0b07044a, name=12312417唐明强SE3读书报告.docx} 
+16 May 2025 17:53:26,925 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 24ms: 067d0c3a-832e-42cf-bb58-439f0b07044a 
+16 May 2025 17:53:27,192 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 067d0c3a-832e-42cf-bb58-439f0b07044a 
+16 May 2025 17:53:41,263 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 786f7281-4474-41d0-ac8d-e52039309ad3 
+16 May 2025 17:53:41,268 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=786f7281-4474-41d0-ac8d-e52039309ad3, language=eng} 
+16 May 2025 17:53:41,487 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=786f7281-4474-41d0-ac8d-e52039309ad3, name=translation_Chinese.docx} 
+16 May 2025 17:53:41,489 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 1ms: 786f7281-4474-41d0-ac8d-e52039309ad3 
+16 May 2025 17:53:41,511 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 786f7281-4474-41d0-ac8d-e52039309ad3 
+16 May 2025 17:54:32,539 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=0b2f2d27-589e-49fc-a874-a60a87d0aba3} 
+16 May 2025 17:54:32,640 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 9e1b2c3e-526a-4e5b-abc2-d9fa448b2032 
+16 May 2025 17:54:32,646 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=9e1b2c3e-526a-4e5b-abc2-d9fa448b2032, language=eng} 
+16 May 2025 17:54:32,647 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=0b2f2d27-589e-49fc-a874-a60a87d0aba3} 
+16 May 2025 17:54:32,871 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=9e1b2c3e-526a-4e5b-abc2-d9fa448b2032, name=translation_Chinese.docx} 
+16 May 2025 17:54:32,873 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 2ms: 9e1b2c3e-526a-4e5b-abc2-d9fa448b2032 
+16 May 2025 17:54:32,877 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 9e1b2c3e-526a-4e5b-abc2-d9fa448b2032 
+16 May 2025 18:00:26,099 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+16 May 2025 18:00:26,101 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+16 May 2025 19:23:37,472 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+16 May 2025 19:23:40,996 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+16 May 2025 19:23:41,048 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 32, new version is 32, executing database incremental update scripts 
+16 May 2025 19:23:41,049 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+16 May 2025 19:23:41,052 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+16 May 2025 19:23:54,443 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+16 May 2025 19:23:55,129 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+16 May 2025 19:23:56,635 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+16 May 2025 19:23:56,686 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+16 May 2025 19:23:56,691 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+16 May 2025 19:23:58,347 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+16 May 2025 19:23:58,354 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+16 May 2025 19:26:19,254 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+16 May 2025 19:35:51,682 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 786f7281-4474-41d0-ac8d-e52039309ad3 
+16 May 2025 19:35:51,702 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=786f7281-4474-41d0-ac8d-e52039309ad3, language=eng} 
+16 May 2025 19:35:52,163 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+16 May 2025 19:35:56,470 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=786f7281-4474-41d0-ac8d-e52039309ad3, name=translation_Chinese.docx} 
+16 May 2025 19:35:56,538 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 68ms: 786f7281-4474-41d0-ac8d-e52039309ad3 
+16 May 2025 19:35:57,243 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 786f7281-4474-41d0-ac8d-e52039309ad3 
+16 May 2025 19:52:42,404 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=cda406b4-1df2-4b25-88c0-e6351d44fcd4} 
+16 May 2025 19:52:42,650 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 68efc389-1e9a-4f90-bdb7-ec290fe67ce9 
+16 May 2025 19:52:42,665 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=68efc389-1e9a-4f90-bdb7-ec290fe67ce9, language=eng} 
+16 May 2025 19:52:42,665 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=cda406b4-1df2-4b25-88c0-e6351d44fcd4} 
+16 May 2025 19:52:42,978 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=68efc389-1e9a-4f90-bdb7-ec290fe67ce9, name=translation_Chinese.pdf} 
+16 May 2025 19:52:42,996 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 18ms: 68efc389-1e9a-4f90-bdb7-ec290fe67ce9 
+16 May 2025 19:52:43,016 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 68efc389-1e9a-4f90-bdb7-ec290fe67ce9 
+16 May 2025 19:59:08,099 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+16 May 2025 19:59:08,101 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+16 May 2025 20:13:19,719 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+16 May 2025 20:13:23,708 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+16 May 2025 20:13:23,738 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 32, new version is 32, executing database incremental update scripts 
+16 May 2025 20:13:23,739 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+16 May 2025 20:13:23,741 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+16 May 2025 20:13:41,051 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+16 May 2025 20:13:41,704 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+16 May 2025 20:13:42,692 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+16 May 2025 20:13:42,739 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+16 May 2025 20:13:42,746 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+16 May 2025 20:13:43,970 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+16 May 2025 20:13:43,978 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+16 May 2025 20:17:47,439 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=057a15b8-4db7-411b-896b-69fbeaedfa49} 
+16 May 2025 20:17:48,587 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 8cc802f5-2a2f-4046-9e1a-a21f86436f25 
+16 May 2025 20:17:48,607 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=8cc802f5-2a2f-4046-9e1a-a21f86436f25, language=eng} 
+16 May 2025 20:17:48,607 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=057a15b8-4db7-411b-896b-69fbeaedfa49} 
+16 May 2025 20:17:49,094 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 7 classes for FormatHandler 
+16 May 2025 20:17:50,592 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=8cc802f5-2a2f-4046-9e1a-a21f86436f25, name=test_english.pdf} 
+16 May 2025 20:17:50,694 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 101ms: 8cc802f5-2a2f-4046-9e1a-a21f86436f25 
+16 May 2025 20:17:50,746 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 8cc802f5-2a2f-4046-9e1a-a21f86436f25 
+16 May 2025 20:18:50,543 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 9e1b2c3e-526a-4e5b-abc2-d9fa448b2032 
+16 May 2025 20:18:50,547 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:67) File updated event: FileUpdatedAsyncEvent{fileId=9e1b2c3e-526a-4e5b-abc2-d9fa448b2032, language=eng} 
+16 May 2025 20:18:53,684 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=9e1b2c3e-526a-4e5b-abc2-d9fa448b2032, name=translation_Chinese.docx} 
+16 May 2025 20:18:53,689 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 5ms: 9e1b2c3e-526a-4e5b-abc2-d9fa448b2032 
+16 May 2025 20:18:53,710 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 9e1b2c3e-526a-4e5b-abc2-d9fa448b2032 
+16 May 2025 20:20:07,784 INFO com.sismics.docs.core.listener.async.DocumentCreatedAsyncListener.on(DocumentCreatedAsyncListener.java:35) Document created event: DocumentCreatedAsyncEvent{documentId=c43ef348-0b4e-478f-bbba-0264fd04a358} 
+16 May 2025 20:20:07,898 INFO com.sismics.docs.core.util.FileUtil.startProcessingFile(FileUtil.java:225) Processing started for file: 6f47af83-a3e2-4a1b-8553-55369871ea1e 
+16 May 2025 20:20:07,902 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.on(FileProcessingAsyncListener.java:53) File created event: FileCreatedAsyncEvent{fileId=6f47af83-a3e2-4a1b-8553-55369871ea1e, language=eng} 
+16 May 2025 20:20:07,902 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=c43ef348-0b4e-478f-bbba-0264fd04a358} 
+16 May 2025 20:20:08,132 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:176) Start extracting content from: File{id=6f47af83-a3e2-4a1b-8553-55369871ea1e, name=translation_Chinese.docx} 
+16 May 2025 20:20:08,135 INFO com.sismics.docs.core.listener.async.FileProcessingAsyncListener.extractContent(FileProcessingAsyncListener.java:182) File content extracted in 3ms: 6f47af83-a3e2-4a1b-8553-55369871ea1e 
+16 May 2025 20:20:08,142 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 6f47af83-a3e2-4a1b-8553-55369871ea1e 
+16 May 2025 20:20:30,758 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=c43ef348-0b4e-478f-bbba-0264fd04a358} 
+16 May 2025 20:20:30,758 INFO com.sismics.docs.core.listener.async.FileDeletedAsyncListener.on(FileDeletedAsyncListener.java:36) File deleted event: FileDeletedAsyncEvent{fileId=6f47af83-a3e2-4a1b-8553-55369871ea1e, fileSize=15325} 

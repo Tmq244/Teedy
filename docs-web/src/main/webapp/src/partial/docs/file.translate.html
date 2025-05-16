@@ -1,0 +1,41 @@
+<div class="modal-header">
+  <h3 class="modal-title">
+    File Translation: {{ getLanguageName(sourceLanguage) }} to {{ getLanguageName(targetLanguage) }}
+    <button type="button" class="close" ng-click="close()" aria-hidden="true">&times;</button>
+  </h3>
+</div>
+
+<div class="modal-body">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{ getLanguageName(sourceLanguage) }} (Original)</h3>
+        </div>
+        <div class="panel-body">
+          <div style="max-height: 500px; overflow-y: auto; white-space: pre-wrap;">{{ original }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">{{ getLanguageName(targetLanguage) }} (Translated)</h3>
+        </div>
+        <div class="panel-body">
+          <div style="max-height: 500px; overflow-y: auto; white-space: pre-wrap;">{{ translated }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-footer">
+  <button class="btn btn-primary" ng-click="downloadTranslated()">
+    <span class="fas fa-download"></span> Download Translation
+  </button>
+  <button class="btn btn-default" ng-click="close()">Close</button>
+</div> 
+
+// AI-Generation: by Cursor
+// prompt： Translating a document to other languages after opening it.

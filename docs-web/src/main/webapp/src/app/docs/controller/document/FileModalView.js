@@ -3,7 +3,7 @@
 /**
  * File modal view controller.
  */
-angular.module('docs').controller('FileModalView', function ($uibModalInstance, $scope, $state, $stateParams, $sce, Restangular, $transitions) {
+angular.module('docs').controller('FileModalView', function ($uibModalInstance, $scope, $state, $stateParams, $sce, Restangular, $transitions, Translation, $uibModal) {
   var setFile = function (files) {
     // Search current file
     _.each(files, function (value) {
@@ -105,6 +105,39 @@ angular.module('docs').controller('FileModalView', function ($uibModalInstance, 
     $uibModalInstance.dismiss();
   };
 
+  /**
+   * Translate the file content.
+   */
+  $scope.translateContent = function() {
+    // Show loading state
+    $scope.translating = true;
+
+    // Get the file content
+    Restangular.one('file/' + $stateParams.fileId + '/data').get({size: 'content'}).then(function(content) {
+      // Translate the content
+      Translation.translateText(content).then(function(translatedContent) {
+        // Display translated content in a modal
+        $uibModal.open({
+          templateUrl: 'partial/docs/file.translate.html',
+          controller: 'FileTranslateCtrl',
+          size: 'lg',
+          resolve: {
+            original: function() { return content; },
+            translated: function() { return translatedContent; },
+            sourceLanguage: function() { return Translation.detectLanguage(content); }
+          }
+        });
+        $scope.translating = false;
+      }, function(error) {
+        $scope.translationError = error;
+        $scope.translating = false;
+      });
+    }, function() {
+      $scope.translationError = 'Error fetching file content';
+      $scope.translating = false;
+    });
+  };
+
   // Close the modal when the user exits this state
   var off = $transitions.onStart({}, function(transition) {
     if (!$uibModalInstance.closed) {
@@ -123,4 +156,20 @@ angular.module('docs').controller('FileModalView', function ($uibModalInstance, 
   $scope.canDisplayPreview = function () {
     return $scope.file && $scope.file.mimetype !== 'application/pdf';
   };
+
+  /**
+   * Return true if the file can be translated (text files, PDFs, etc.)
+   */
+  $scope.canTranslate = function() {
+    if (!$scope.file) return false;
+    var translatableMimeTypes = [
+      'text/plain', 'text/html', 'text/csv', 'application/pdf', 
+      'application/vnd.oasis.opendocument.text', 
+      'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    ];
+    return translatableMimeTypes.indexOf($scope.file.mimetype) !== -1;
+  };
 });
+
+// AI-Generation: by Cursor
+// prompt： Translating a document to other languages after opening it.

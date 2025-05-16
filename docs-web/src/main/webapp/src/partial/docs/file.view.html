@@ -22,6 +22,11 @@
   </div>
   
   <div class="btn-group pull-right">
+    <button type="button" class="btn btn-default" uib-tooltip="Translate this file" tooltip-append-to-body="true" 
+            ng-click="translateContent()" ng-if="canTranslate()" ng-disabled="translating">
+      <span class="fas fa-language" ng-if="!translating"></span>
+      <span class="fas fa-spin fa-circle-notch" ng-if="translating"></span>
+    </button>
     <button type="button" class="btn btn-default" uib-tooltip="Print this file" tooltip-append-to-body="true" ng-click="printFile()">
       <span class="fas fa-print"></span>
     </button>
@@ -32,6 +37,10 @@
       <span class="fas fa-eye"></span>
     </button>
   </div>
+</div>
+
+<div class="alert alert-danger" ng-if="translationError">
+  {{ translationError }}
 </div>
 
 <div class="text-center" style="position: relative;" ng-if="$stateParams.fileId">
@@ -58,3 +67,6 @@
     {{ 'file.view.not_found' | translate }}
   </p>
 </div>
+
+// AI-Generation: by Cursor
+// prompt： Translating a document to other languages after opening it.
