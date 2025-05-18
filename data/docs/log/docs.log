@@ -5983,3 +5983,40 @@ select rr1_0.REQ_ID_C,rr1_0.REQ_CREATEDATE_D,rr1_0.REQ_EMAIL_C,rr1_0.REQ_PASSWOR
 16 May 2025 20:20:08,142 INFO com.sismics.docs.core.util.FileUtil.endProcessingFile(FileUtil.java:235) Processing ended for file: 6f47af83-a3e2-4a1b-8553-55369871ea1e 
 16 May 2025 20:20:30,758 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=c43ef348-0b4e-478f-bbba-0264fd04a358} 
 16 May 2025 20:20:30,758 INFO com.sismics.docs.core.listener.async.FileDeletedAsyncListener.on(FileDeletedAsyncListener.java:36) File deleted event: FileDeletedAsyncEvent{fileId=6f47af83-a3e2-4a1b-8553-55369871ea1e, fileSize=15325} 
+16 May 2025 20:33:17,468 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+16 May 2025 20:33:17,471 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+16 May 2025 20:33:36,891 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+16 May 2025 20:33:41,073 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+16 May 2025 20:33:41,110 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 32, new version is 32, executing database incremental update scripts 
+16 May 2025 20:33:41,111 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+16 May 2025 20:33:41,113 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+16 May 2025 20:33:52,565 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+16 May 2025 20:33:52,900 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+16 May 2025 20:33:53,756 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+16 May 2025 20:33:53,801 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+16 May 2025 20:33:53,807 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+16 May 2025 20:33:54,953 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+16 May 2025 20:33:54,960 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+16 May 2025 20:36:10,978 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+16 May 2025 20:37:34,108 INFO com.sismics.docs.core.listener.async.DocumentDeletedAsyncListener.on(DocumentDeletedAsyncListener.java:31) Document deleted event: DocumentDeletedAsyncEvent{documentId=c43ef348-0b4e-478f-bbba-0264fd04a358} 
+16 May 2025 21:09:41,109 INFO com.sismics.docs.core.service.InboxService.shutDown(InboxService.java:57) Inbox service shutting down 
+16 May 2025 21:09:41,111 INFO com.sismics.docs.core.service.FileService.shutDown(FileService.java:44) File service shutting down 
+18 May 2025 10:09:38,351 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+18 May 2025 10:09:41,478 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:57) Opening database and executing incremental updates 
+18 May 2025 10:09:41,491 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:106) Found database version 32, new version is 32, executing database incremental update scripts 
+18 May 2025 10:09:41,491 INFO com.sismics.util.jpa.DbOpenHelper.open(DbOpenHelper.java:108) Database upgrade complete 
+18 May 2025 10:09:41,494 INFO com.sismics.util.jpa.EMF.getEntityManagerProperties(EMF.java:67) Configuring EntityManager from hibernate.properties 
+18 May 2025 10:09:50,506 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 1 classes for IndexingHandler 
+18 May 2025 10:09:50,762 INFO com.sismics.docs.core.util.indexing.LuceneIndexingHandler.initLucene(LuceneIndexingHandler.java:129) Using RAM Lucene storage 
+18 May 2025 10:09:51,346 INFO com.sismics.docs.core.service.FileService.startUp(FileService.java:39) File service starting up 
+18 May 2025 10:09:51,367 INFO com.sismics.docs.core.service.InboxService.startUp(InboxService.java:52) Inbox service starting up 
+18 May 2025 10:09:51,375 INFO com.sismics.docs.core.service.FileSizeService.startUp(FileSizeService.java:30) File size service starting up 
+18 May 2025 10:09:52,708 INFO com.sismics.docs.core.service.FileSizeService.lambda$runOneIteration$0(FileSizeService.java:50) No more file to process, stopping the service 
+18 May 2025 10:09:52,739 INFO com.sismics.docs.core.service.FileSizeService.shutDown(FileSizeService.java:35) File size service shutting down 
+18 May 2025 10:10:19,474 INFO com.sismics.util.ClasspathScanner.findClasses(ClasspathScanner.java:48) Found 2 classes for AuthenticationHandler 
+18 May 2025 10:36:29,205 INFO com.sismics.docs.core.listener.async.DocumentUpdatedAsyncListener.on(DocumentUpdatedAsyncListener.java:39) Document updated event: DocumentUpdatedAsyncEvent{documentId=c2d0751a-1a96-4252-8eaf-b09cdc1f4080} 
+18 May 2025 10:36:29,205 INFO com.sismics.docs.core.listener.async.FileDeletedAsyncListener.on(FileDeletedAsyncListener.java:36) File deleted event: FileDeletedAsyncEvent{fileId=c5df7c7e-d13b-4416-9eaa-c638a2ac049a, fileSize=49623162} 
+18 May 2025 10:37:34,236 INFO com.sismics.docs.core.listener.async.FileDeletedAsyncListener.on(FileDeletedAsyncListener.java:36) File deleted event: FileDeletedAsyncEvent{fileId=786f7281-4474-41d0-ac8d-e52039309ad3, fileSize=15325} 
+18 May 2025 10:37:34,237 INFO com.sismics.docs.core.listener.async.DocumentDeletedAsyncListener.on(DocumentDeletedAsyncListener.java:31) Document deleted event: DocumentDeletedAsyncEvent{documentId=2e03bd80-0a56-42a2-8813-39b22f495b1b} 
+18 May 2025 10:37:44,077 INFO com.sismics.docs.core.listener.async.FileDeletedAsyncListener.on(FileDeletedAsyncListener.java:36) File deleted event: FileDeletedAsyncEvent{fileId=9e1b2c3e-526a-4e5b-abc2-d9fa448b2032, fileSize=15325} 
+18 May 2025 10:37:44,077 INFO com.sismics.docs.core.listener.async.DocumentDeletedAsyncListener.on(DocumentDeletedAsyncListener.java:31) Document deleted event: DocumentDeletedAsyncEvent{documentId=0b2f2d27-589e-49fc-a874-a60a87d0aba3} 
